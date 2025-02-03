@@ -1,0 +1,28 @@
+{
+    "Microsoft": [
+        "https://jobs.careers.microsoft.com/global/en/search?q=data%20engineer&lc=United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
+        "https://jobs.careers.microsoft.com/global/en/search?q=product%20manager&lc=United%20States&l=en_us&pg=1&pgSz=20&o=Recent",
+    "https://jobs.careers.microsoft.com/global/en/search?q=product%20manager&lc=United%20States&p=Product%20Management&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Recent",
+    "https://jobs.careers.microsoft.com/global/en/search?q=AI%20product%20manager&lc=United%20States&p=Product%20Management&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Recent&flt=true",
+    "https://jobs.careers.microsoft.com/global/en/search?q=software%20engineer&lc=United%20States&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Recent&flt=true"
+    ],
+    "Google": [
+        "https://www.google.com/about/careers/applications/jobs/results/?q=product%20manager&location=United%20States&target_level=EARLY&degree=MASTERS&employment_type=FULL_TIME"
+    ],
+    "Nvidia": [
+        "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite?q=product%20manager&locationHierarchy1=2fcb99c455831013ea52fb338f2932d8&timeType=5509c0b5959810ac0029943377d47364&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffc668c6847e8c"
+    ], 
+    "Amazon":[
+        "https://www.amazon.jobs/en/search?offset=100&result_limit=10&sort=recent&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=product%20manager&city=&country=&region=&county=&query_options=&",
+        "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=recent&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=software%20engineer&city=&country=&region=&county=&query_options=&"
+    ],
+    "Goldman": ["https://higher.gs.com/results?LOCATION=Boston|Houston&page=1&search=project%20manager&sort=POSTED_DATE", 
+                "https://higher.gs.com/results?LOCATION=Boston|Houston&page=1&search=software&sort=POSTED_DATE"
+    ],
+    "SWBC":["https://swbc.wd1.myworkdayjobs.com/InformationTechnology?q=software"],
+    "GM FINANCIAL":["https://careers.gmfinancial.com/careers-home/jobs?keywords=project%20manager&stretchUnits=MILES&stretch=10&location=United%20States&woe=12&page=1&sortBy=relevance&radius=10&radiusUnit=MILES&stretchUnit=MILES"],
+    "DocuSign":["https://careers.docusign.com/jobs?page=1&keywords=software%20united%20states&sortBy=posted_date&descending=true"],
+    "Amd": [
+        "https://careers.amd.com/careers-home/jobs?keywords=project%20manager&stretchUnits=MILES&stretch=10&location=United%20States&lat=39.76&lng=-98.5&woe=12&sortBy=posted_date&descending=true&page=1&country=United%20States&categories=Engineering&limit=100"
+    ]
+}
