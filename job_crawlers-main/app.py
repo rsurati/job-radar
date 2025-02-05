@@ -16,12 +16,12 @@ CORS(app)  # Enable CORS on all routes
 
 def check_new_job():    
     #asyncio.run(run_crawler_for_gm_financial())  # Ensure the async function is run properly
-    asyncio.run(run_crawler_for_amd())  # Ensure the async function is run properly
-    asyncio.run(run_crawler_for_goldman_sachs())  # Ensure the async function is run properly
+    #asyncio.run(run_crawler_for_amd())  # Ensure the async function is run properly
+    #asyncio.run(run_crawler_for_goldman_sachs())  # Ensure the async function is run properly
     # asyncio.run(run_crawler_for_nvidia())  # Ensure the async function is run properly
-    asyncio.run(run_crawler_for_amazon())  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_docusign())  # Ensure the async function is run properly
-    asyncio.run(run_crawler_for_microsoft())  # Ensure the async function is run properly
+    #asyncio.run(run_crawler_for_amazon())  # Ensure the async function is run properly
+    #asyncio.run(run_crawler_for_docusign())  # Ensure the async function is run properly
+    #asyncio.run(run_crawler_for_microsoft())  # Ensure the async function is run properly
     print("Checking for new job...")
 
 @app.route('/check_new_job', methods=['GET'])
@@ -31,7 +31,7 @@ def handle_check_new_job():
 
 def schedule_job_checks():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(check_new_job, 'interval', minutes=2)
+    scheduler.add_job(check_new_job, 'interval', minutes=30)
     scheduler.start()
 
 @app.route('/main', methods=['GET'])
