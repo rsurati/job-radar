@@ -6,7 +6,7 @@ from email_config.email_setup import send_email
 from crawlers.config_crawler import driver
 from database.mongo import ensure_company_document, add_jobs_if_not_exists
 
-def run_crawler(url, num_job):
+async def run_crawler(url, num_job):
 
     list_of_jobs = []
 
@@ -46,7 +46,7 @@ def run_crawler(url, num_job):
 
     return list_of_jobs
 
-def run_crawler_for_gm_financial(receiverEmail=None):
+async def run_crawler_for_gm_financial(receiverEmail=None):
 
     file_path = "urls/urls.json"
     ensure_company_document("GM Financial")
@@ -57,7 +57,7 @@ def run_crawler_for_gm_financial(receiverEmail=None):
     try:
         num_jobs = 20
         for url in position_urls.get("GM FINANCIAL", []):
-            list_of_jobs = run_crawler(url, num_jobs)
+            list_of_jobs = await run_crawler(url, num_jobs)
             print(list_of_jobs)
 
             jobs = add_jobs_if_not_exists(list_of_jobs)
