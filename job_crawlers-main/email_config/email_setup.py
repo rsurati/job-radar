@@ -2,10 +2,12 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-def send_email(job_details_list):
+def send_email(job_details_list, receiverEmail = None):
     from_email = "djobs9171@gmail.com"
     from_password = ""
-    to_emails = ["ras2692@gmail.com","devanshu.vguj@gmail.com"] 
+    print("In send email function " +receiverEmail)
+    to_email = receiverEmail
+    #to_emails = ["ras2692@gmail.com","devanshu.vguj@gmail.com"] 
 
     subject = "New " + job_details_list[0]['company'] +  " Job Posting: "
 
@@ -18,7 +20,7 @@ def send_email(job_details_list):
 
     msg = MIMEMultipart()
     msg['From'] = from_email
-    msg['To'] = ", ".join(to_emails)
+    msg['To'] = "".join(to_email)
     msg['Subject'] = subject
     msg.attach(MIMEText(body, 'plain'))
 
@@ -27,7 +29,7 @@ def send_email(job_details_list):
         server.starttls()
         server.login(from_email, from_password)
         text = msg.as_string()
-        server.sendmail(from_email, to_emails, text)
+        server.sendmail(from_email, to_email, text)
         print("Email sent successfully.")
     except smtplib.SMTPAuthenticationError:
         print("Failed to authenticate with the email server. Check the username/password.")

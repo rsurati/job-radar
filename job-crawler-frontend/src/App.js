@@ -2,35 +2,28 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function App() {
+  const [email, setEmail] = useState("");  // Store user email
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  // Call API to check for new jobs immediately
-  const checkNewJobs = async () => {
-    setLoading(true);
-    setMessage("");
-
-    try {
-      const response = await axios.get("http://localhost:5000/check_new_job");
-      setMessage(response.data.message);
-    } catch (error) {
-      setMessage("Error checking for new jobs");
-      console.error(error);
-    } finally {
-      setLoading(false);
+  // Handle API call to /main with user email
+  const startJobScheduler = async () => {
+    if (!email) { 
+      
+      setMessage("Please enter your email.");
+      return;
     }
-  };
 
-  // Call API to schedule periodic job checks
-  const scheduleJobChecks = async () => {
     setLoading(true);
     setMessage("");
 
     try {
-      const response = await axios.get("http://localhost:5000/main");
+      const response = await axios.post("http://localhost:5000/main", {
+        email: email,
+      });
       setMessage(response.data.message);
     } catch (error) {
-      setMessage("Error scheduling job checks");
+      setMessage("Error starting job scheduler.");
       console.error(error);
     } finally {
       setLoading(false);
@@ -40,21 +33,40 @@ function App() {
   return (
     <div style={styles.container}>
       <h1>Job Crawler Dashboard</h1>
-      <button onClick={checkNewJobs} disabled={loading} style={styles.button}>
-        {loading ? "Checking..." : "Check for New Jobs"}
+      
+      {/* Email Input Field */}
+      <input
+        type="email"
+        placeholder="Enter your email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        style={styles.input}
+      />
+
+      {/* Start Job Scheduler Button */}
+      <button onClick={startJobScheduler} disabled={loading} style={styles.button}>
+        {loading ? "Starting..." : "Start Job Scheduler"}
       </button>
-      <button onClick={scheduleJobChecks} disabled={loading} style={styles.button}>
-        {loading ? "Scheduling..." : "Schedule Job Checks"}
-      </button>
+
       {message && <p style={styles.message}>{message}</p>}
     </div>
   );
 }
 
+// Styling
 const styles = {
   container: {
     textAlign: "center",
     marginTop: "50px",
+  },
+  input: {
+    padding: "10px",
+    fontSize: "16px",
+    width: "250px",
+    marginBottom: "10px",
+    borderRadius: "5px",
+    border: "1px solid #ccc",
+    textAlign: "center",
   },
   button: {
     padding: "10px 20px",
