@@ -9,7 +9,7 @@ function App() {
   // Handle API call to /main with user email
   const startJobScheduler = async () => {
     if (!email) { 
-      
+    
       setMessage("Please enter your email.");
       return;
     }

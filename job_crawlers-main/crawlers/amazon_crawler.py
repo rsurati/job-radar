@@ -42,7 +42,7 @@ async def async_run_crawler(executor, url, num_jobs):
     return await loop.run_in_executor(executor, run_crawler, url, num_jobs)
 
 # Asynchronous function to run the crawler for Amazon
-async def run_crawler_for_amazon():
+async def run_crawler_for_amazon(receiverEmail=None):
     file_path = "urls/urls.json"
     ensure_company_document("Amazon")
     with open(file_path, 'r') as file:
@@ -62,7 +62,7 @@ async def run_crawler_for_amazon():
                 print("Got the following new jobs from database")
                 print(added_jobs)
                 if added_jobs:
-                    send_email(added_jobs)
+                    send_email(added_jobs, receiverEmail)
 
     print(all_jobs)
     return all_jobs

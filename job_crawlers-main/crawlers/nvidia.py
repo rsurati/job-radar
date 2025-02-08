@@ -45,7 +45,7 @@ async def async_run_crawler(executor, url):
     return await loop.run_in_executor(executor, run_crawler, url)
 
 # Asynchronous function to run the crawler for Nvidia
-async def run_crawler_for_nvidia():
+async def run_crawler_for_nvidia(receiverEmail=None):
     file_path = "urls/urls.json"
     with open(file_path, 'r') as file:
         position_urls = json.load(file)
@@ -59,7 +59,7 @@ async def run_crawler_for_nvidia():
             job = await task
             if job:
                 all_jobs.append(job)
-                send_email(job)
+                send_email(job, receiverEmail)
 
     print(all_jobs)
     return all_jobs

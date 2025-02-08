@@ -46,7 +46,7 @@ def run_crawler(url, num_job):
 
     return list_of_jobs
 
-def run_crawler_for_gm_financial():
+def run_crawler_for_gm_financial(receiverEmail=None):
 
     file_path = "urls/urls.json"
     ensure_company_document("GM Financial")
@@ -66,7 +66,7 @@ def run_crawler_for_gm_financial():
 
             if jobs:
                 # Call function to send email notification (assuming you have a send_email function)
-                send_email(jobs)
+                send_email(jobs, receiverEmail)
     finally:
         driver.quit()
 

@@ -18,14 +18,13 @@ CORS(app)  # Enable CORS on all routes
 def check_new_job(receiverEmail=None):  
     #data = request.json  # Get JSON data from frontend
     #receiver_email = "Here is the receiver email"#data.get("receiver_email")  # Extract receiver email  
-    #asyncio.run(run_crawler_for_gm_financial())  # Ensure the async function is run properly
-    #asyncio.run(run_crawler_for_amd())  # Ensure the async function is run properly
-    #asyncio.run(run_crawler_for_goldman_sachs())  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_nvidia())  # Ensure the async function is run properly
-    #asyncio.run(run_crawler_for_amazon())  # Ensure the async function is run properly
-    print("In app.js "+receiverEmail)
+    asyncio.run(run_crawler_for_gm_financial(receiverEmail=None)) #done # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_amd(receiverEmail=None))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_goldman_sachs(receiverEmail=None))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_nvidia(receiverEmail=None))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_amazon(receiverEmail=None))  # Ensure the async function is run properly
     asyncio.run(run_crawler_for_docusign(receiverEmail))  # Ensure the async function is run properly
-    #asyncio.run(run_crawler_for_microsoft())  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_microsoft(receiverEmail=None))  # Ensure the async function is run properly
     print("Checking for new job...")
 
 @app.route('/check_new_job', methods=['GET'])
