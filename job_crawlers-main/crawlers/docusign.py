@@ -53,8 +53,6 @@ async def async_run_crawler(executor, url, num_jobs):
 # Asynchronous function to run the crawler for DocuSign
 async def run_crawler_for_docusign( receiverEmail = None):
 
-    print("In the job sepcific crawler " +receiverEmail)
-
     file_path = "urls/urls.json"
     ensure_company_document("DocuSign")
     with open(file_path, 'r') as file:
