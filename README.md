@@ -1,9 +1,9 @@
-# JobRADDR: Job Notification Agent for Students by Students 🚀
+# JobRADAR: Job Notification Agent for Students by Students 🚀
 
 ## Problem We Are Solving 📢
 As students, we have faced significant challenges while searching for jobs. The biggest issue is not receiving interview calls, even after applying to thousands of places. One of the main reasons for this is the overwhelming volume of applications that entry-level jobs receive. Within just a few hours of posting, these jobs can have thousands of applicants, reducing the chances of skilled candidates even passing the initial ATS screening.
 
-To address this, we created **JobRADDR**: A job notification agent that crawls major Big Tech career pages every 15 minutes and sends you an email notification whenever a new job is posted. This way, you can apply immediately before the application pool becomes saturated, improving your chances of getting noticed.
+To address this, we created **JobRADAR**: A job notification agent that crawls major Big Tech career pages every 15 minutes and sends you an email notification whenever a new job is posted. This way, you can apply immediately before the application pool becomes saturated, improving your chances of getting noticed.
 
 ## Features ✨
 - **Automated Job Crawling**: Monitors job postings every 15 minutes.
@@ -11,7 +11,7 @@ To address this, we created **JobRADDR**: A job notification agent that crawls m
 - **Customizable Searches**: Allows users to add their own crawlers for desired companies.
 - **Open Source & Contributable**: Set up and run locally or contribute to the project!
 
-## How to Set Up JobRADDR Locally 🛠️
+## How to Set Up JobRADAR Locally 🛠️
 
 ### Step 1: Find and Add Your Job URL 🌍
 1. Download the project repository.
@@ -112,7 +112,7 @@ This project is licensed under the **MIT License**, meaning you are free to use,
 ```plaintext
 MIT License
 
-Copyright (c) 2025 JobRADDR
+Copyright (c) 2025 JobRADAR
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
