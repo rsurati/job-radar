@@ -3,8 +3,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 def send_email(job_details_list, receiverEmail = None):
-    from_email = "djobs9171@gmail.com"
-    from_password = ""
+    from_email = "ENTER_YOUR_EMIAL"
+    from_password = "ENTER_EMAIL_PASSWORD"
     print("In send email function " +receiverEmail)
     to_email = receiverEmail
 
