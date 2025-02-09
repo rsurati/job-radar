@@ -1,4 +1,4 @@
-# JobRADAR: Job Notification Agent for Students by Students 🚀
+# JobRADAR: Job Notification Agent for the Students by the Students 🚀
 
 ## Problem We Are Solving 📢
 As students, we have faced significant challenges while searching for jobs. The biggest issue is not receiving interview calls, even after applying to thousands of places. One of the main reasons for this is the overwhelming volume of applications that entry-level jobs receive. Within just a few hours of posting, these jobs can have thousands of applicants, reducing the chances of skilled candidates even passing the initial ATS screening.
