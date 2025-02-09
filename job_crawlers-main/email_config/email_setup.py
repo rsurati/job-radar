@@ -7,7 +7,6 @@ def send_email(job_details_list, receiverEmail = None):
     from_password = ""
     print("In send email function " +receiverEmail)
     to_email = receiverEmail
-    #to_emails = ["ras2692@gmail.com","devanshu.vguj@gmail.com"] 
 
     subject = "New " + job_details_list[0]['company'] +  " Job Posting: "
 
