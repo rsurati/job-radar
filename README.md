@@ -14,7 +14,7 @@ To address this, we created **JobRADAR**: A job notification agent that crawls m
 ## Architecture Diagram 🏗️
 Below is the architecture diagram illustrating how JobRADDR works:
 
-![JobRADDR Architecture](images/jr1.jpg)
+![JobRADAR Architecture](images/jr1.jpg)
 
 ## How to Set Up JobRADAR Locally 🛠️
 
