@@ -11,6 +11,11 @@ To address this, we created **JobRADAR**: A job notification agent that crawls m
 - **Customizable Searches**: Allows users to add their own crawlers for desired companies.
 - **Open Source & Contributable**: Set up and run locally or contribute to the project!
 
+## Architecture Diagram 🏗️
+Below is the architecture diagram illustrating how JobRADDR works:
+
+![JobRADDR Architecture](images/jr1.jpg)
+
 ## How to Set Up JobRADAR Locally 🛠️
 
 ### Step 1: Find and Add Your Job URL 🌍
