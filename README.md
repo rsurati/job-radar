@@ -74,7 +74,7 @@ npm install
 #### 2. Backend Setup
 ```bash
 cd job_crawlers-main
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 ### Running the Application ▶️
