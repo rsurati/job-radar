@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div style={styles.container}>
-      <h1>Job Crawler Dashboard</h1>
+      <h1>Job Radar Dashboard</h1>
       
       {/* Email Input Field */}
       <input

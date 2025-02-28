@@ -24,5 +24,14 @@
     "DocuSign":["https://careers.docusign.com/jobs?page=1&keywords=software%20united%20states&sortBy=posted_date&descending=true"],
     "Amd": [
         "https://careers.amd.com/careers-home/jobs?keywords=project%20manager&stretchUnits=MILES&stretch=10&location=United%20States&lat=39.76&lng=-98.5&woe=12&sortBy=posted_date&descending=true&page=1&country=United%20States&categories=Engineering&limit=100"
-    ]
+    ],
+    "Cibc":["https://cibc.wd3.myworkdayjobs.com/en-US/search?q=application%20consultant"],
+    "TD":[
+        "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers?q=Software&jobFamilyGroup=de769652963501f2001247b507040dac",
+        "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers?q=analyst&jobFamilyGroup=de769652963501f2001247b507040dac",
+        "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers?jobFamilyGroup=de76965296350195765906b50704e3ab"
+    ],
+    "RBC":["https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1?Sub_Category=7911130ac480011863777c3b250d0002" , 
+            "https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1?q=IT%20Support" ]
+
 }

@@ -14,7 +14,7 @@ def run_crawler(url, num_job):
 
     try:
         driver.get(url)
-        time.sleep(6)  # Let the page load
+        time.sleep(10)  # Let the page load
 
         # Use the first child element under 'ul' with role='list' as the container for each job listing
         job_elements = driver.find_elements(By.CSS_SELECTOR, 'ul[role="list"] > li')[:num_job]
