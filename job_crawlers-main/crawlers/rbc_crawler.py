@@ -58,7 +58,7 @@ async def async_run_crawler(executor, url, num_jobs):
 # Asynchronous function to run the crawler for RBC
 async def run_crawler_for_rbc(receiverEmail=None):
     file_path = "urls/urls.json"
-    ensure_company_document("RBC")
+    ensure_company_document("RBC") 
 
     with open(file_path, 'r') as file:
         position_urls = json.load(file)

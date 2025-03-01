@@ -19,15 +19,15 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS on all routes
 
 def check_new_job(receiverEmail=None):  
-    # asyncio.run(run_crawler_for_gm_financial(receiverEmail)) #done # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_amd(receiverEmail))  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_goldman_sachs(receiverEmail))  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_nvidia(receiverEmail))  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_amazon(receiverEmail))  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_docusign(receiverEmail))  # Ensure the async function is run properly
-    # asyncio.run(run_crawler_for_microsoft(receiverEmail))  # Ensure the async function is run properly
-    #asyncio.run(run_crawler_for_cibc(receiverEmail))  # Ensure the async function is run properly
-    #asyncio.run(run_crawler_for_td(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_gm_financial(receiverEmail)) #done # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_amd(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_goldman_sachs(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_nvidia(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_amazon(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_docusign(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_microsoft(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_cibc(receiverEmail))  # Ensure the async function is run properly
+    asyncio.run(run_crawler_for_td(receiverEmail))  # Ensure the async function is run properly
     asyncio.run(run_crawler_for_rbc(receiverEmail))  # Ensure the async function is run properly
     print("Checking for new job...")
 

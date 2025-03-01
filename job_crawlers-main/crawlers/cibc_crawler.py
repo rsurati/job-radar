@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 from email_config.email_setup import send_email
+
 from database.mongo import ensure_company_document, add_jobs_if_not_exists
 
 # Function to run the crawler for a given URL

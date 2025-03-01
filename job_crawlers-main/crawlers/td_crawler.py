@@ -10,7 +10,7 @@ from database.mongo import ensure_company_document, add_jobs_if_not_exists
 # Function to run the crawler for a given URL
 def run_crawler(url, num_job):
     list_of_jobs = []
-    driver = webdriver.Chrome()  # Ensure you have the appropriate WebDriver in PATH
+    driver = webdriver.Chrome()   # Ensure you have the appropriate WebDriver in PATH
 
     try:
         driver.get(url)
