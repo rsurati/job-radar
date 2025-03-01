@@ -12,7 +12,7 @@ To address this, we created **JobRADAR**: A job notification agent that crawls m
 - **Open Source & Contributable**: Set up and run locally or contribute to the project!
 
 ## Architecture Diagram 🏗️
-Below is the architecture diagram illustrating how JobRADDR works:
+Below is the architecture diagram illustrating how JobRADAR works:
 
 ![JobRADAR Architecture](images/jr1.jpg)
 
